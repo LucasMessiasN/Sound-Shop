@@ -1,0 +1,178 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+    font: normal 20pt arial;
+}
+
+header {
+    background-color: rgb(77, 0, 139);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.432);
+    padding: 10px 0;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(77, 0, 139);
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: rgb(77, 0, 139);
+    margin-top: 10vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+menu > a {
+    margin: 5px 15px;
+    color: white;
+    transition: color 0.5s ease;
+    text-decoration: none;
+    padding: 3px 5px;
+}
+
+a:hover {
+    background-color: rgb(67, 1, 121);
+    padding: 2px 2px;
+    border-radius: 15px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+h1 > a {
+    color: rgb(252, 255, 69);
+    text-align: center;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas por linha */
+    gap: 20px; /* Espaçamento entre os produtos */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.item a:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+    border-radius: 10px;
+}
+
+
+.item img {
+    width: 20vw;  /* Largura fixa */
+    height: 50vh; /* Altura fixa */
+    object-fit: contain; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas para um design mais bonito */
+}   
+
+@media (max-width: 768px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos {
+        grid-template-columns: repeat(1, 1fr); /* 1 coluna no celular */
+    }
+}
+
+.ver{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ver>a{
+    color: white;
+}
+
+/*PAGINA DO PRODUTO*/
+
+.produto-detalhe {
+    background-color: rgb(179, 179, 179);
+    border-radius: 2vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.produto-detalhe img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(67, 1, 121);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 2vw;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(98, 34, 151);
+}
+
+.desc {
+    background-color: white;
+    border-radius: 2vh;
+    font-size: small;
+}
+
+.desc>h3{
+    text-align: center;
+}
+
+.desc>p{
+    text-align: left;
+    margin: 0px 0px 10px 5px;
+    padding-bottom: 10px;
+}
