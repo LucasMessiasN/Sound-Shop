@@ -10,26 +10,25 @@
 <body>
     <header>
         <h1><a href="index.html">Sound Shop</a></h1>
+        <nav>
+            <a href="carrinho.html" id="botao-carrinho">🛒 Carrinho</a>
+        </nav>
     </header>
 
     <main>
         <section class="produto-detalhe">
             <img src="img/guitarra/violao.jpg" alt="Violão">
             <h2>Violão Clássico</h2>
-            <p><strong>Preço:</strong> R$ 490,90</p>
-            <p><strong>Marca:</strong> Vogga</p>
-            <p><strong>Cor:</strong> Madeira</p>
-            <p><strong>Material:</strong> Madeira de Mogno</p>
-            <p><strong>Formas de Pagamento:</strong> Cartão, Boleto, Pix</p>
-
-            <button onclick="comprar()">Comprar Agora</button>
+            <button class="comprar">Adicionar ao carrinho</button>
+            <div class="desc">
+                <h3>Descrição</h3>
+                <p><strong>Preço:</strong> R$ 490,90</p>
+                <p><strong>Marca:</strong> Vogga</p>
+                <p><strong>Cor:</strong> Madeira</p>
+                <p><strong>Material:</strong> Madeira de Mogno</p>
+                <p><strong>Formas de Pagamento:</strong> Cartão, Boleto, Pix</p>
+            </div>
         </section>
     </main>
-
-    <script>
-        function comprar() {
-            alert("Produto adicionado ao carrinho!");
-        }
-    </script>
 </body>
 </html>

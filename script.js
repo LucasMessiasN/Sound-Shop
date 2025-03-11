@@ -6,6 +6,8 @@
     //var nome = window.prompt('What´s Your Name?');
     //document.getElementById("resultado").innerHTML = "Olá, " + nome + "! Aproveite nosso site.";});
 
-    function comprar() {
+    function comprar() {  // Vai alertar ao clicar no botão de "Comprar" ou "Adicionar ao carrinho"
         alert("Produto adicionado ao carrinho!");
     }
+
+   
