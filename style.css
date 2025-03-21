@@ -206,3 +206,19 @@ button:hover {
 #botao-carrinho:hover {
     background-color: rgb(98, 34, 151); /*cor de fundo ao passar o mouse em cima*/
 }
+
+
+/*PAGINA DO CARRINHO*/
+
+#carrinho{
+    background-color: blueviolet;
+    width: 100vh;
+    height: 70vh;
+    margin: auto;
+}
+
+#carrinho p{
+    
+    text-align: center;
+    color: white;
+}
